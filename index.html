@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO META TAGS -->
+<title>Dr. Mashiur | চর্মরোগ ও সৌন্দর্য চিকিৎসক | ঢাকা</title>
+<meta name="description" content="ঢাকায় চর্মরোগ, চুল পড়া, যৌন স্বাস্থ্য ও অ্যাডভান্সড অ্যাস্থেটিক চিকিৎসার বিশেষজ্ঞ। অনলাইন ও সরাসরি পরামর্শ পান। Farmgate, Dhaka.">
+<meta name="keywords" content="চর্মরোগ ডাক্তার ঢাকা, skin doctor Dhaka, hair fall treatment Dhaka, online doctor Bangladesh, চুল পড়া চিকিৎসা, PRP therapy Dhaka, Farmgate doctor, Dr Mashiur, aesthetic doctor Dhaka, sexual health doctor Dhaka">
+<meta name="author" content="Dr. Sheikh Mashiur Matin">
+<meta property="og:title" content="Dr. Mashiur | চর্মরোগ ও সৌন্দর্য চিকিৎসক">
+<meta property="og:description" content="অনলাইন ও সরাসরি পরামর্শ — ঢাকার বিশেষজ্ঞ ডাক্তার">
+<meta property="og:url" content="https://drmashiur.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0f1923;
+  --navy: #162032;
+  --teal: #0a9396;
+  --teal2: #94d2bd;
+  --gold: #e9c46a;
+  --cream: #fdf8f0;
+  --white: #ffffff;
+  --muted: #6b7a8d;
+  --border: #e8e0d4;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  font-family: 'Hind Siliguri', sans-serif;
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ─── HERO ─── */
+.hero {
+  min-height: 100vh;
+  background: var(--navy);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(10,147,150,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 10% 80%, rgba(233,196,106,0.08) 0%, transparent 60%);
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* NAV */
+nav {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.nav-logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 18px;
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+
+.nav-logo span { color: var(--teal); }
+
+.nav-cta {
+  background: var(--teal);
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s;
+}
+
+.nav-cta:active { background: #077a7d; }
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 5;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 24px 60px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(10,147,150,0.15);
+  border: 1px solid rgba(10,147,150,0.3);
+  border-radius: 25px;
+  padding: 6px 16px;
+  font-size: 12px;
+  color: var(--teal2);
+  margin-bottom: 24px;
+  width: fit-content;
+  animation: fadeUp 0.6s ease both;
+}
+
+.live-dot {
+  width: 7px; height: 7px;
+  background: #4ade80;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,100% { opacity:1; transform:scale(1); }
+  50% { opacity:0.4; transform:scale(1.4); }
+}
+
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(24px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+.hero-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(36px, 8vw, 52px);
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 8px;
+  animation: fadeUp 0.7s ease both;
+  animation-delay: 0.05s;
+}
+
+.hero-name em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.hero-title {
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  animation: fadeUp 0.7s ease both;
+  animation-delay: 0.1s;
+}
+
+.hero-desc {
+  font-size: 16px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  max-width: 420px;
+  margin-bottom: 32px;
+  font-weight: 300;
+  animation: fadeUp 0.7s ease both;
+  animation-delay: 0.15s;
+}
+
+.hero-desc strong { color: var(--teal2); font-weight: 600; }
+
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  animation: fadeUp 0.8s ease both;
+  animation-delay: 0.2s;
+}
+
+.btn-primary {
+  background: var(--teal);
+  color: var(--white);
+  border: none;
+  border-radius: 14px;
+  padding: 16px 28px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  box-shadow: 0 8px 24px rgba(10,147,150,0.3);
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.08);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  padding: 16px 28px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:active { transform: scale(0.97); }
+.btn-secondary:active { background: rgba(255,255,255,0.12); }
+
+/* STATS */
+.stats-bar {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  animation: fadeUp 0.9s ease both;
+  animation-delay: 0.25s;
+}
+
+.stat {
+  flex: 1;
+  text-align: center;
+  padding: 20px 10px;
+  border-right: 1px solid rgba(255,255,255,0.07);
+}
+
+.stat:last-child { border-right: none; }
+
+.stat-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 24px;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  font-weight: 300;
+}
+
+/* ─── SECTIONS ─── */
+section {
+  padding: 56px 24px;
+}
+
+.sec-label {
+  font-size: 11px;
+  color: var(--teal);
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.sec-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.sec-sub {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+
+/* ─── SERVICES ─── */
+.services-bg { background: var(--white); }
+
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.scard {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: border-color 0.2s;
+}
+
+.scard:active { border-color: var(--teal); }
+
+.scard-icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.ic1 { background: #fef3c7; }
+.ic2 { background: #d1fae5; }
+.ic3 { background: #dbeafe; }
+.ic4 { background: #fee2e2; }
+.ic5 { background: #ede9fe; }
+.ic6 { background: #fce7f3; }
+
+.scard-body { flex: 1; }
+
+.scard-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.scard-en {
+  font-size: 11px;
+  color: var(--teal);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.scard-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sitem {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ─── ABOUT ─── */
+.about-bg { background: var(--navy); }
+
+.about-bg .sec-title { color: var(--white); }
+.about-bg .sec-label { color: var(--teal2); }
+.about-bg .sec-sub { color: rgba(255,255,255,0.55); }
+
+.degree-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.degree-row {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+.degree-badge {
+  background: var(--teal);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.degree-text {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.degree-text strong {
+  color: var(--white);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* ─── CONTACT ─── */
+.contact-bg { background: var(--cream); }
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.ccard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px 20px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.2s;
+}
+
+.ccard:active { border-color: var(--teal); }
+
+.ccard-icon {
+  width: 48px; height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.ci1 { background: #dcfce7; }
+.ci2 { background: #dbeafe; }
+.ci3 { background: #fef3c7; }
+.ci4 { background: #fce7f3; }
+
+.ccard-info { flex: 1; }
+.ccard-label { font-size: 11px; color: var(--muted); font-weight: 400; margin-bottom: 2px; }
+.ccard-val { font-size: 15px; font-weight: 700; color: var(--ink); }
+.ccard-sub { font-size: 12px; color: var(--muted); font-weight: 300; margin-top: 2px; }
+.ccard-arr { color: var(--muted); font-size: 20px; }
+
+/* TIMING */
+.timing {
+  background: var(--navy);
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.timing-icon { font-size: 32px; }
+.timing-text p { font-size: 14px; color: rgba(255,255,255,0.9); font-weight: 500; line-height: 1.6; }
+.timing-text small { font-size: 12px; color: rgba(255,255,255,0.45); }
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--ink);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.footer-logo span { color: var(--teal); }
+
+footer p {
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+  line-height: 1.8;
+}
+
+/* STICKY BOTTOM */
+.sticky-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 0;
+  z-index: 100;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+}
+
+.sticky-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px 8px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Hind Siliguri', sans-serif;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.sticky-btn:first-child {
+  background: var(--ink);
+  color: var(--white);
+  border-radius: 0 0 0 0;
+}
+
+.sticky-btn:last-child {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.sticky-btn span { font-size: 20px; }
+
+body { padding-bottom: 70px; }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <nav>
+    <div class="nav-logo">Dr.<span>Mashiur</span></div>
+    <a href="https://wa.me/8801918372449?text=অনলাইন%20পরামর্শ%20নিতে%20চাই" class="nav-cta">অ্যাপয়েন্টমেন্ট</a>
+  </nav>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="live-dot"></div>
+      অনলাইন পরামর্শ চালু আছে
+    </div>
+
+    <div class="hero-name">
+      Dr. Sheikh<br><em>Mashiur Matin</em>
+    </div>
+
+    <div class="hero-title">MBBS · MPH · FCGP · CCD</div>
+
+    <p class="hero-desc">
+      <strong>চর্মরোগ, চুল পড়া, যৌন স্বাস্থ্য</strong> ও অ্যাডভান্সড অ্যাস্থেটিক চিকিৎসার বিশেষজ্ঞ।
+      ঘরে বসেই অনলাইনে পরামর্শ নিন অথবা সরাসরি ক্লিনিকে আসুন।
+    </p>
+
+    <div class="hero-btns">
+      <a href="https://wa.me/8801918372449?text=অনলাইন%20পরামর্শ%20নিতে%20চাই" class="btn-primary">
+        💬 অনলাইন পরামর্শ
+      </a>
+      <a href="tel:+8801918372449" class="btn-secondary">
+        📞 Call করুন
+      </a>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-num">১১+</div>
+      <div class="stat-label">বছরের অভিজ্ঞতা</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">২টি</div>
+      <div class="stat-label">ক্লিনিক, ঢাকা</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">৬+</div>
+      <div class="stat-label">বিশেষ থেরাপি</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-bg">
+  <div class="sec-label">সেবাসমূহ</div>
+  <div class="sec-title">আমি যেসব রোগী দেখি</div>
+  <p class="sec-sub">চর্মরোগ থেকে শুরু করে অ্যাডভান্সড রিজেনারেটিভ থেরাপি পর্যন্ত সব সেবা এক জায়গায়।</p>
+
+  <div class="service-cards">
+    <div class="scard">
+      <div class="scard-icon ic1">✨</div>
+      <div class="scard-body">
+        <div class="scard-title">ত্বক ও সৌন্দর্য চিকিৎসা</div>
+        <div class="scard-en">Skin & Aesthetic Medicine</div>
+        <div class="scard-items">
+          <span class="sitem">চুল পড়া</span>
+          <span class="sitem">ব্রণ ও দাগ</span>
+          <span class="sitem">মেলাসমা</span>
+          <span class="sitem">একজিমা</span>
+          <span class="sitem">CO₂ Laser</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="scard-icon ic2">🧬</div>
+      <div class="scard-body">
+        <div class="scard-title">রিজেনারেটিভ থেরাপি</div>
+        <div class="scard-en">Regenerative Medicine</div>
+        <div class="scard-items">
+          <span class="sitem">PRP Therapy</span>
+          <span class="sitem">Shockwave</span>
+          <span class="sitem">Ozone Therapy</span>
+          <span class="sitem">Exosome</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="scard-icon ic3">👨</div>
+      <div class="scard-body">
+        <div class="scard-title">পুরুষ স্বাস্থ্য</div>
+        <div class="scard-en">Men's Health & Sexual Medicine</div>
+        <div class="scard-items">
+          <span class="sitem">ইরেক্টাইল ডিসফাংশন</span>
+          <span class="sitem">P-Shot</span>
+          <span class="sitem">যৌনরোগ</span>
+          <span class="sitem">PE চিকিৎসা</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="scard-icon ic4">🦴</div>
+      <div class="scard-body">
+        <div class="scard-title">ব্যথা ব্যবস্থাপনা</div>
+        <div class="scard-en">Pain Management</div>
+        <div class="scard-items">
+          <span class="sitem">জয়েন্ট ব্যথা</span>
+          <span class="sitem">কোমর ব্যথা</span>
+          <span class="sitem">ইনজেকশন থেরাপি</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="scard-icon ic5">👶</div>
+      <div class="scard-body">
+        <div class="scard-title">শিশু চিকিৎসা</div>
+        <div class="scard-en">Pediatric Care</div>
+        <div class="scard-items">
+          <span class="sitem">জ্বর ও কাশি</span>
+          <span class="sitem">ডায়ারিয়া</span>
+          <span class="sitem">অ্যালার্জি</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="scard-icon ic6">🔬</div>
+      <div class="scard-body">
+        <div class="scard-title">ফাংশনাল মেডিসিন</div>
+        <div class="scard-en">Functional & Metabolic Medicine</div>
+        <div class="scard-items">
+          <span class="sitem">ডায়াবেটিস</span>
+          <span class="sitem">পুষ্টি পরামর্শ</span>
+          <span class="sitem">ওজন নিয়ন্ত্রণ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-bg">
+  <div class="sec-label">পরিচয়</div>
+  <div class="sec-title" style="color:white">শিক্ষা ও যোগ্যতা</div>
+  <p class="sec-sub">দেশে ও বিদেশে প্রশিক্ষিত একজন অভিজ্ঞ চিকিৎসক।</p>
+
+  <div class="degree-list">
+    <div class="degree-row">
+      <div class="degree-badge">MBBS</div>
+      <div class="degree-text">
+        <strong>Dhaka National Medical College</strong>
+        মেডিকেল ডিগ্রি
+      </div>
+    </div>
+    <div class="degree-row">
+      <div class="degree-badge">MPH</div>
+      <div class="degree-text">
+        <strong>HM & Public Health Nutrition</strong>
+        জনস্বাস্থ্য বিশেষজ্ঞ
+      </div>
+    </div>
+    <div class="degree-row">
+      <div class="degree-badge">FCGP</div>
+      <div class="degree-text">
+        <strong>Fellow of College of General Practitioners</strong>
+        জেনারেল মেডিসিন বিশেষজ্ঞ
+      </div>
+    </div>
+    <div class="degree-row">
+      <div class="degree-badge">CCD</div>
+      <div class="degree-text">
+        <strong>Certificate in Clinical Diabetology</strong>
+        ডায়াবেটিস বিশেষজ্ঞ
+      </div>
+    </div>
+    <div class="degree-row">
+      <div class="degree-badge">DOC</div>
+      <div class="degree-text">
+        <strong>Skin, Allergy, Sexual Disease & Aesthetic Medicine</strong>
+        চর্মরোগ ও সৌন্দর্য চিকিৎসা বিশেষজ্ঞ
+      </div>
+    </div>
+    <div class="degree-row">
+      <div class="degree-badge">PRP</div>
+      <div class="degree-text">
+        <strong>PRP Expert — Erectile Dysfunction & Hair Fall</strong>
+        রিজেনারেটিভ মেডিসিন বিশেষজ্ঞ
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-bg">
+  <div class="sec-label">যোগাযোগ</div>
+  <div class="sec-title">অ্যাপয়েন্টমেন্ট নিন</div>
+  <p class="sec-sub">অনলাইনে বা সরাসরি — যেভাবে সুবিধা।</p>
+
+  <div class="contact-cards">
+    <a href="https://wa.me/8801918372449?text=অনলাইন%20পরামর্শ%20নিতে%20চাই" class="ccard">
+      <div class="ccard-icon ci1">💬</div>
+      <div class="ccard-info">
+        <div class="ccard-label">অনলাইন পরামর্শ</div>
+        <div class="ccard-val">WhatsApp করুন</div>
+        <div class="ccard-sub">Video Call · ডিজিটাল প্রেসক্রিপশন</div>
+      </div>
+      <div class="ccard-arr">›</div>
+    </a>
+
+    <a href="tel:+8801918372449" class="ccard">
+      <div class="ccard-icon ci2">📞</div>
+      <div class="ccard-info">
+        <div class="ccard-label">সিরিয়ালের জন্য Call</div>
+        <div class="ccard-val">+880 1918-372449</div>
+        <div class="ccard-sub">Integrated Medicare, Farmgate</div>
+      </div>
+      <div class="ccard-arr">›</div>
+    </a>
+
+    <a href="tel:+8801870689601" class="ccard">
+      <div class="ccard-icon ci3">📞</div>
+      <div class="ccard-info">
+        <div class="ccard-label">New Anamika Hospital</div>
+        <div class="ccard-val">+880 1870-689601</div>
+        <div class="ccard-sub">East Bashabo, Dhaka-1214</div>
+      </div>
+      <div class="ccard-arr">›</div>
+    </a>
+
+    <a href="mailto:dr.mashiurmatin@gmail.com" class="ccard">
+      <div class="ccard-icon ci4">✉️</div>
+      <div class="ccard-info">
+        <div class="ccard-label">Email</div>
+        <div class="ccard-val">dr.mashiurmatin@gmail.com</div>
+        <div class="ccard-sub">রিপোর্ট পাঠাতে পারেন</div>
+      </div>
+      <div class="ccard-arr">›</div>
+    </a>
+  </div>
+
+  <div class="timing">
+    <div class="timing-icon">⏰</div>
+    <div class="timing-text">
+      <p>শনি – বৃহস্পতি<br>সকাল ১০টা – রাত ৮টা</p>
+      <small>শুক্রবার বন্ধ · অনলাইন পরামর্শও চালু</small>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Dr.<span>Mashiur</span>.com</div>
+  <p>
+    178-179, Two-Star Tower, Farmgate, Tejgaon, Dhaka-1215<br>
+    চর্মরোগ · চুল পড়া · যৌন স্বাস্থ্য · অ্যাস্থেটিক মেডিসিন<br>
+    © ২০২৫ Dr. Sheikh Mashiur Matin
+  </p>
+</footer>
+
+<!-- STICKY BOTTOM BAR -->
+<div class="sticky-bar">
+  <a href="tel:+8801918372449" class="sticky-btn">
+    <span>📞</span>
+    সরাসরি Call
+  </a>
+  <a href="https://wa.me/8801918372449?text=অনলাইন%20পরামর্শ%20নিতে%20চাই" class="sticky-btn">
+    <span>💬</span>
+    অনলাইন পরামর্শ
+  </a>
+</div>
+
+</body>
+</html>
